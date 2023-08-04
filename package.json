@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "app": "node app",
+    "app": "node app.mjs",
     "start": "node index"
   },
   "keywords": [],
