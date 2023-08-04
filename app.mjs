@@ -1,7 +1,7 @@
-const readline = require('node:readline');
-const fs = require('node:fs');
-const { program } = require('commander');
-require('colors');
+import readline from 'node:readline';
+import fs from 'node:fs';
+import { program } from 'commander';
+import 'colors';
 
 program.option(
   '-f, --file [name]',
@@ -73,15 +73,6 @@ const game = () => {
   );
 };
 
-// const reader = readline.createInterface({
-//   input: process.stdin,
-//   output: process.stdout,
-// });
-
-// reader.on('line', input => {
-//   console.log(`Received: [${input}]\n`);
-// });
-
 consoleManager.question(
   "Hello, what's your name?\n > ",
   answer => {
@@ -92,3 +83,12 @@ consoleManager.question(
     game();
   }
 );
+
+// const reader = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout,
+// });
+
+// reader.on('line', input => {
+//   console.log(`Received: [${input}]\n`);
+// });
